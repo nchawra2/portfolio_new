@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +7,196 @@
 
 html {
   font-size: 62.65%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("./assets/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.navigation {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+
+.logo {
+  font-size: 2.7rem;
+  font-weight: bolder;
+}
+
+.logo:hover {
+  color: red;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul li {
+  margin-right: 2rem;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation ul li a {
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: red;
+}
+
+.intro {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.profile-img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  border: 0.3rem solid #fff;
+  background-image: url("./assets/profile-img.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+}
+
+.profile-name {
+  font-size: 4.5rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.profile-job {
+  font-size: 1.8rem;
+  color: rgb(190, 188, 188);
+  margin-top: 1.5rem;
+}
+
+.icon-animate {
+  padding-top: 8rem;
+}
+
+.icon-animate a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.fa-chevron-down {
+  animation-name: icon-move;
+  animation-duration: 1.3s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-size: 3rem;
+}
+
+@keyframes icon-move {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 2rem;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+/*       ABOUT SECTION      */
+
+#about {
+  margin-top: 8rem;
+}
+
+.about-profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-info {
+  flex-basis: 60rem;
+  padding: 2rem;
+}
+
+.about-info h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.about-info h3 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.747);
+}
+
+.about-info p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14rem;
+  margin-top: 2rem;
+}
+
+.download-btn-text {
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(69, 156, 69);
+}
+
+.icons {
+  margin-top: 2rem;
+}
+
+.fa-download {
+  font-size: 1.2rem;
+}
+
+.about-profile-photo img {
+  width: 100%;
 }
