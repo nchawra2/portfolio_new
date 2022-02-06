@@ -33,7 +33,7 @@ export default function Header() {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="/">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
                 <a href="/">Testimonial</a>
