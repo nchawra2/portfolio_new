@@ -19,28 +19,44 @@ export default function Portfolio() {
           <button className="p-btn">FULL STACK (MERN)</button>
         </div>
         <div className="all-project">
-          <a href="https://mern-crud-redux.herokuapp.com/" target="_blank">
+          <a
+            href="https://mern-crud-redux.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="project">
               <img src={p6} alt="" className="p-1" />
               <h3 className="project-text">MERN</h3>
             </div>
           </a>
 
-          <a href="https://react-kart-js.herokuapp.com/" target="_blank">
+          <a
+            href="https://react-kart-js.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="project">
               <img src={p7} alt="" className="p-1" />
               <h3 className="project-text">MERN</h3>
             </div>
           </a>
 
-          <a href="https://nchawra2.github.io/todo-app-js/" target="_blank">
+          <a
+            href="https://nchawra2.github.io/todo-app-js/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="project">
               <img src={p3} alt="" className="p-1" />
               <h3 className="project-text">JAVASCRIPT</h3>
             </div>
           </a>
 
-          <a href="https://nchawra2.github.io/clock-app-js/" target={"_blank"}>
+          <a
+            href="https://nchawra2.github.io/clock-app-js/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <div className="project">
               <img src={p2} alt="" className="p-1" />
               <h3 className="project-text">JAVASCRIPT</h3>
@@ -50,6 +66,7 @@ export default function Portfolio() {
           <a
             href="https://nchawra2.github.io/todo-app-mobile/index.html"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="project">
               <img src={p1} alt="" className="p-1" />
