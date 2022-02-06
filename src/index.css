@@ -11,7 +11,8 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
@@ -458,4 +459,85 @@ footer a {
 
 .copyright {
   font-size: 2rem;
+}
+
+/*  MEDIA QUERIES */
+
+@media (max-width: 940px) {
+  .all-project {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 50%;
+  }
+
+  .about-profile {
+    flex-direction: column;
+  }
+
+  .profile-img-2 {
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 560px) {
+  .all-project {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .project {
+    height: 40rem;
+    width: 50rem;
+    margin: auto;
+  }
+
+  .blogs {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .project-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-categories button {
+    margin: 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media (max-width: 380px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
 }
