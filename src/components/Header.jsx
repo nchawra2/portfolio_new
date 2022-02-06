@@ -36,10 +36,10 @@ export default function Header() {
                 <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="/">Testimonial</a>
+                <a href="#blog">Blog</a>
               </li>
               <li>
-                <a href="/">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
